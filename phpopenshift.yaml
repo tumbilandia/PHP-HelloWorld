@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: BuildConfig
 metadata:
-  name: php55
+  name: nextplyspa
   labels:
     app: php56
   annotations:
@@ -10,7 +10,7 @@ spec:
   triggers:
   - type: GitHub
     github:
-      secret: cbdd6c274422d05fda0b3e4cecfa00bbf7d84903
+      secret:  dcddc8cd95c0ed61edb4628a6a87c99557931d82
   runPolicy: Serial
   strategy:
     type: JenkinsPipeline
